@@ -31,3 +31,4 @@ jobs:
         with:
           push: true
           tags: vdesabou/docker-connect-migration-utility:latest
+          platforms: linux/amd64,linux/arm64
