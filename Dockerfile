@@ -4,6 +4,9 @@
 # --------------------
 FROM python:3.12-slim AS builder
 
+# Install git and other build dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends git build-essential
+
 # 1. Clone the repository
 RUN git clone https://github.com/confluentinc/connect-migration-utility.git /app
 
